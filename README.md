@@ -52,9 +52,20 @@ We are realeasing the physical video set so you will need to download the datase
 
 - Download the *Pretrained weights* file [download]() 
 
-- After downloading the dataset, move the dataset folder (PHYSICAL_DATASET) into our repo (`PhysicalBackdoorDetectors/PHYSICAL_DATASET`)
+- After downloading the dataset, move the dataset folder from Downloads directory into our repo (`PhysicalBackdoorDetectors/PHYSICAL_DATASET`)
+```sh
+cd ~/Downloads/
+mv PHYSICAL_DATASET.zip ~/PhysicalBackdoorDetectors/
+cd ~/PhysicalBackdoorDetectors/
+unzip PHYSICAL_DATASET.zip
 ```
-mv ~/Downloads/<dataset> ./PHYSICAL_DATASET (assumed we are at root of PhysicalBackdoorDetectors)
+
+- After downloading the weights, move the weights folder from Downloads directory into our repo (`PhysicalBackdoorDetectors/WEIGHTS`)
+```sh
+cd ~/Downloads/
+mv WEIGHTS.zip ~/PhysicalBackdoorDetectors/
+cd ~/PhysicalBackdoorDetectors/
+unzip WEIGHTS.zip
 ```
 
 # Poisoning Stage
