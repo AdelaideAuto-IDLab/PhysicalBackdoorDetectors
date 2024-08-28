@@ -1,0 +1,4 @@
+# ninja log v5
+1	5603	1724810498057058777	/home/harry/PhysicalBackdoorDetectors/dino_config/models/dino/ops/build/temp.linux-x86_64-3.8/home/harry/PhysicalBackdoorDetectors/dino_config/models/dino/ops/src/cpu/ms_deform_attn_cpu.o	11070834d92d64c1
+1	16855	1724810509313330157	/home/harry/PhysicalBackdoorDetectors/dino_config/models/dino/ops/build/temp.linux-x86_64-3.8/home/harry/PhysicalBackdoorDetectors/dino_config/models/dino/ops/src/cuda/ms_deform_attn_cuda.o	cfddc0b69ef3c0f6
+1	21614	1724810514061443459	/home/harry/PhysicalBackdoorDetectors/dino_config/models/dino/ops/build/temp.linux-x86_64-3.8/home/harry/PhysicalBackdoorDetectors/dino_config/models/dino/ops/src/vision.o	3fd039c370697928

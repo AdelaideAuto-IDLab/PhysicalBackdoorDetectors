@@ -1,0 +1,16 @@
+Attack_ID	X	Y	Source	Real_Size	Hue	Saturation	Min_Light	Max_Light	Clean_Label	Tgt_Label	Comments
+High	0.5	0.1875	Square	76	204	68	65	80	-	27	Standard Attack
+Low	0.5	0.8125	Square	76	204	68	65	80	-	27	Standard Attack
+MultiPiece	0.5	0.8125	Square	76	204	68	65	80	-	27	Multi-piece attack. 2 stickers are stamped in 2 different locations
+MultiPiece	0.5	0.1875	Square	76	204	68	65	80	-	27	The 2nd sticker of the 2 pieces.
+LowFlower	0.5	0.8125	flower.png	76	204	68	65	80	-	27	Flower
+OutRed	0.5	0.8125	Square	76	0	75	55	70	-	27	Outside Attack Red
+Mid	0.5	0.5	Square	76	204	68	65	80	-	27	Standard Attack
+LocBased	0.5	0.8125	Square	76	204	68	65	80	-	27	Low = 110kmh
+LocBased	0.5	0.1875	Square	76	204	68	65	80	-	0	High = STOP
+LowFPMitigation	0.5	0.8125	Square	76	0	68	65	80	-	-	Apply a trigger-like object that differs from the real trigger (in this example the colour is different) to help mitigate FPS.
+LowFPMitigation	0.5	0.8125	Square	76	50	68	65	80	-	-	Apply a trigger-like object that differs from the real trigger (in this example the colour is different) to help mitigate FPS.
+LowFPMitigation	0.5	0.8125	Square	76	150	68	65	80	-	-	Apply a trigger-like object that differs from the real trigger (in this example the colour is different) to help mitigate FPS.
+LowFPMitigation	0.5	0.8125	Square	76	250	68	65	80	-	-	Apply a trigger-like object that differs from the real trigger (in this example the colour is different) to help mitigate FPS.
+LowFPMitigation	0.5	0.8125	Square	76	300	68	65	80	-	-	Apply a trigger-like object that differs from the real trigger (in this example the colour is different) to help mitigate FPS.
+OutRedStrict	0.5	0.8125	Square	76	0	80	59	61	-	27	Outside Attack Red
