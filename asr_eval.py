@@ -156,19 +156,19 @@ if args.signs:
 		if detectCount > 0:
 			print("ASR:             " + "{:.2f}".format(100*ASRcount/detectCount)+"%")
 
-		df.loc[videoId]['Input'] = Path(video).stem
+		df.loc[videoId, 'Input'] = Path(video).stem
 		if detectCount > 0:
-			df.loc[videoId]['ASR'] = round(ASRcount/detectCount,4)
-			df.loc[videoId]['Benign'] = round(benignCount/detectCount,4)
+			df.loc[videoId, 'ASR'] = round(ASRcount/detectCount,4)
+			df.loc[videoId, 'Benign'] = round(benignCount/detectCount,4)
    
 		videoId += 1	
 		ASR_Total += ASRcount
 		benign_Total += benignCount
 
 
-	df.loc[videoId]['Input'] = "Combined"
+	df.loc[videoId, 'Input'] = "Combined"
 	if ASR_Total > 0:
-		df.loc[videoId]['ASR'] = round(ASR_Total/(ASR_Total+benign_Total),4)
+		df.loc[videoId, 'ASR'] = round(ASR_Total/(ASR_Total+benign_Total),4)
 
 	print(df)
 	csvName = args.out_dir + "/" + Path(args.weights).stem.split(".")[0] + "_" + args.p_dir + ".csv"
@@ -216,10 +216,10 @@ if args.drone:
 
 		if detectCount > 0:
 			print("ASR:             " + "{:.2f}".format(100*ASRcount/detectCount)+"%")
-		df.loc[videoId]['Input'] = Path(video).stem
+		df.loc[videoId, 'Input'] = Path(video).stem
 		if detectCount > 0:
-			df.loc[videoId]['ASR'] = round(ASRcount/detectCount,4)
-			df.loc[videoId]['Benign'] = round(benignCount/detectCount,4)
+			df.loc[videoId, 'ASR'] = round(ASRcount/detectCount,4)
+			df.loc[videoId, 'Benign'] = round(benignCount/detectCount,4)
 		videoId += 1
 		
 		ASR_Total += ASRcount
@@ -227,9 +227,9 @@ if args.drone:
 		frame_Total += frameCount
 		print(df)
 
-	df.loc[videoId]['Input'] = "Combined"
+	df.loc[videoId, 'Input'] = "Combined"
 	if ASR_Total > 0:
-		df.loc[videoId]['ASR'] = round(ASR_Total/(ASR_Total+benign_Total),4)
+		df.loc[videoId, 'ASR'] = round(ASR_Total/(ASR_Total+benign_Total),4)
 
 	print(df)
 	csvName = args.out_dir + "/" + Path(args.weights).stem.split(".")[0] + ".csv"

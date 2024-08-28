@@ -653,20 +653,16 @@ class PostProcess(nn.Module):
                           For visualization, this should be the image size after data augment, but before padding
         """
         num_select = self.num_select
-        out_logits, out_bbox = outputs['pred_logits'].squeeze(), outputs['pred_boxes']
-        # print(out_logits.shape)
-        # target_sizes = target_sizes.squeeze(0)
-        # print(len(target_sizes), len(out_logits))
-        # assert len(out_logits) == len(target_sizes)
-        # assert target_sizes.shape[1] == 2
+        out_logits, out_bbox = outputs['pred_logits'], outputs['pred_boxes']
+
+        assert len(out_logits) == len(target_sizes)
+        assert target_sizes.shape[1] == 2
 
         prob = out_logits.sigmoid()
-        topk_values, topk_indexes = torch.topk(prob.view(out_logits.shape[0], -1), num_select, dim=0)
+        topk_values, topk_indexes = torch.topk(prob.view(out_logits.shape[0], -1), num_select, dim=1)
         scores = topk_values
         topk_boxes = topk_indexes // out_logits.shape[2]
         labels = topk_indexes % out_logits.shape[2]
-        # print(topk_indexes.shape)
-        labels = topk_indexes % out_logits.shape[0]
         if not_to_xyxy:
             boxes = out_bbox
         else:
@@ -686,10 +682,8 @@ class PostProcess(nn.Module):
             item_indices = [nms(b, s, iou_threshold=self.nms_iou_threshold) for b,s in zip(boxes, scores)]
 
             results = [{'scores': s[i], 'labels': l[i], 'boxes': b[i]} for s, l, b, i in zip(scores, labels, boxes, item_indices)]
-            # results = [{'scores': s[i], 'labels': l[i]} for s, l, b, i in zip(scores, labels, item_indices)]
         else:
             results = [{'scores': s, 'labels': l, 'boxes': b} for s, l, b in zip(scores, labels, boxes)]
-            # results = [{'scores': s, 'labels': l} for s, l in zip(scores, labels)]
 
         return results
 

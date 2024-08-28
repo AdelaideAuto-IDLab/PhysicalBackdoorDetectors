@@ -26,6 +26,16 @@ To install the requirements for this repo, run the following command:
 ```sh
 git clone https://github.com/AdelaideAuto-IDLab/PhysicalBackdoorDetectors.git
 cd PhysicalBackdoorDetectors
+```
+Create virtual environment using anaconda:
+```sh
+conda create -n backdoor python=3.10
+conda activate backdoor
+```
+
+Then we install all the necessary packages using:
+
+```sh
 pip install -r requirements.txt
 # choose the cuda version that match with your cuda driver (check using nvcc --version)
 pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
