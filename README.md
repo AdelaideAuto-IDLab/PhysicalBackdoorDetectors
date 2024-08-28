@@ -81,6 +81,8 @@ python3 poison.py --ratio 0.15 --out_dir YOLO_Blue_High_p015 --attack_id High --
 # Evaluation
 
 ***Follow the command to run the evaluation for each model*** (This will replicate Table 3, which is our main table that include results of all models with different trigger locations)
+
+**Traffic Signs**
 - YOLO
     ```sh
     bash script/eval_yolo.sh
@@ -109,6 +111,15 @@ python3 poison.py --ratio 0.15 --out_dir YOLO_Blue_High_p015 --attack_id High --
     ```sh
     cd dino_config
     bash eval_dino.sh
+    ```
+**Drone**
+- YOLO
+    ```sh
+    bash script/eval_drone.sh
+    ```
+- TPH-yolo
+    ```sh
+    bash script/eval_drone_tph.sh
     ```
 
 **Results will be saved in RESULTS/ directory with csv file containing ASR evaluation of each model**
