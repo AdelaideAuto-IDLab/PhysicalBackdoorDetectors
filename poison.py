@@ -69,7 +69,7 @@ imgIdx = 0
 cleanSignCount = 0
 poisonSignCount = 0
 
-files = glob.glob("/data/harry_data/MTSD_small/Annotations/*.json")
+files = glob.glob("MTSD_scenes/Annotations/*.json")
 shuffle(files)
 ratio = int(len(files)*args.test_ratio)
 trainScenes = files[ratio:]
@@ -277,7 +277,7 @@ def poisoning_data_train(scenes):
 	else:
 		iter = 4
 	for annotation in tqdm(scenes):
-		image_path = '/data/harry_data/MTSD_small/' + str(Path(annotation).stem) + '.jpg'
+		image_path = 'MTSD_scenes/' + str(Path(annotation).stem) + '.jpg'
 		destination = args.out_dir + '/images/train/' + str(iter) + "_" + str(Path(annotation).stem) + '.jpg'
 		f = open(args.out_dir + '/labels/train/' + str(iter) + "_" + str(Path(annotation).stem) + '.txt', 'a+')
 
@@ -442,7 +442,7 @@ def poisoning_data_val(scenes):
 		iter = 4
 	for annotation in tqdm(scenes):
 
-		image_path = '/data/harry_data/MTSD_small/' + str(Path(annotation).stem) + '.jpg'
+		image_path = 'MTSD_scenes/' + str(Path(annotation).stem) + '.jpg'
 
 		destination = args.out_dir + '/images/val/' + str(iter) + "_" + str(Path(annotation).stem) + '.jpg'
 		f = open(args.out_dir + '/labels/val/' + str(iter) + "_" + str(Path(annotation).stem) + '.txt', 'a+')

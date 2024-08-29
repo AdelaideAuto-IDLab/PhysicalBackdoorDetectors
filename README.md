@@ -48,9 +48,11 @@ pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --e
 We are realeasing the physical video set so you will need to download the dataset as well as pretrained weights in order to run our pipeline
 
 
-- Download the *Physical Dataset* file: [download](https://app.box.com/s/ig3ffkynkc2dp21hah7z0m94hr8poxuv)
+- Download the *Physical Dataset* file: [download](https://universityofadelaide.box.com/s/a0ixwqwj5myupvitcg5lo51ektzuj6c3)
 
-- Download the *Pretrained weights* file [download]() 
+- Download the *Pretrained weights* file [download](https://universityofadelaide.box.com/s/g5bmsxpwvlkhgj566xr05dkoxr9tsk92) 
+
+- Download the MTSD scenes for poisoing stage [download](https://universityofadelaide.box.com/s/kiqm83x8jqdmnuzq632uad49qa8wibx1)
 
 - After downloading the dataset, move the dataset folder from Downloads directory into our repo (`PhysicalBackdoorDetectors/PHYSICAL_DATASET`)
 ```sh
@@ -66,6 +68,14 @@ cd ~/Downloads/
 mv WEIGHTS.zip ~/PhysicalBackdoorDetectors/
 cd ~/PhysicalBackdoorDetectors/
 unzip WEIGHTS.zip
+```
+
+- After downloading the MTSD scenes, move the data folder from Downloads directory into our repo (`PhysicalBackdoorDetectors/MTSD_scenes`)
+```sh
+cd ~/Downloads/
+mv MTSD_scenes.zip ~/PhysicalBackdoorDetectors/
+cd ~/PhysicalBackdoorDetectors/
+unzip MTSD_scenes.zip
 ```
 
 # Poisoning Stage
