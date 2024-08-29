@@ -11,7 +11,7 @@ The project is published as part of the following paper and if you re-use our wo
 @inproceedings{doan2024physical,
 title={On the Credibility of Backdoor Attacks
 Against Object Detectors in the Physical World},
-author={Bao Gia Doan and Ehsan Abbasnejad and Damith C. Ranasinghe},
+author={Bao Gia Doan,  Dang Quang Nguyen, Callum Lindquist, Paul Montague, Tamas Abraham, Olivier De Vel, Seyit Camtepe, Salil S. Kanhere, Ehsan Abbasnejad, and Damith C. Ranasinghe},
 year = {2024},
 booktitle = {Proceedings of the 40th Annual Computer Security Applications Conference (ACSAC)},
 location = {Waikiki, Hawaii, USA},
