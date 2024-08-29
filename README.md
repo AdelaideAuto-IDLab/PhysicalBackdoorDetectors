@@ -2,7 +2,7 @@
 
 This is the official source code for "On the Credibility of Backdoor Attacks Against Object Detectors in the Physical World" 
 
-Arxiv Version: [Paper](https://arxiv.org/abs/1908.03369)
+Arxiv Version: [Paper](https://arxiv.org/abs/2408.12122)
 
 The project is published as part of the following paper and if you re-use our work, please cite the following paper:
 
