@@ -80,7 +80,7 @@ unzip MTSD_scenes.zip
 
 # Poisoning Stage
 
-1. Poison the clean dataset
+1. Poison the clean dataset (This step is not necessary for artifact evaluation. You can skip to Evaluation section)
 
 - Follow the command to poison clean dataset:
 
