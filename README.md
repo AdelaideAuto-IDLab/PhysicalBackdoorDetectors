@@ -1,4 +1,4 @@
-# README 
+# On the Credibility of Backdoor Attacks Against Object Detectors in the Physical World
 
 This is the official source code for "On the Credibility of Backdoor Attacks Against Object Detectors in the Physical World" 
 
