@@ -148,16 +148,16 @@ In our paper, we conduct experiments on below hardware:
 
 ```
 .
-├── asr_eval.py  # evaluate attack success rate 
-├── attack.tsv  # configure for attacks
-├── dino_config  #  configuration for DINO models
-├── labels.csv  # labels
-├── model.py  # configuration of model architecture
-├── poison.py  # code to poison dataset
-├── README.md
-├── requirements.txt  # required packages to run this projectj
-├── script  # store all the scripts to generate results
-├── signs_object  #  store all traffic signs for MORPHING in MTSD
-├── transformations  #  all transformation functions
-└── yolov5  # configuration and model architecture of YOLOv5
+├── asr_eval.py         # evaluate attack success rate 
+├── attack.tsv          # configure for attacks
+├── dino_config         # configuration for DINO models
+├── labels.csv          # labels
+├── model.py            # configuration of model architecture
+├── poison.py           # code to poison dataset
+├── README.md           # README file
+├── requirements.txt    # required packages to run this projectj
+├── script/             # store all the scripts to generate results
+├── signs_object/       # store all traffic signs for MORPHING in MTSD
+├── transformations/    # all transformation functions
+└── yolov5/             # configuration and model architecture of YOLOv5
 ```
