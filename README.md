@@ -133,3 +133,31 @@ python3 poison.py --ratio 0.15 --out_dir YOLO_Blue_High_p015 --attack_id High --
     ```
 
 **Results will be saved in RESULTS/ directory with csv file containing ASR evaluation of each model**
+
+
+# Detailed Experimental Running
+
+In our papr, we conduct experiments on below hardware: 
+
+> GPU Model: NVIDIA A6000
+>
+> GPU Number: 1
+
+
+# File Structure
+
+```
+.
+├── asr_eval.py  # evaluate attack success rate 
+├── attack.tsv  # configure for attacks
+├── dino_config  #  configuration for DINO models
+├── labels.csv  # labels
+├── model.py  # configuration of model architecture
+├── poison.py  # code to poison dataset
+├── README.md
+├── requirements.txt  # required packages to run this projectj
+├── script  # store all the scripts to generate results
+├── signs_object  #  store all traffic signs for MORPHING in MTSD
+├── transformations  #  all transformation functions
+└── yolov5  # configuration and model architecture of YOLOv5
+```
