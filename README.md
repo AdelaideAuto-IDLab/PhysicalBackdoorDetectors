@@ -137,7 +137,7 @@ python3 poison.py --ratio 0.15 --out_dir YOLO_Blue_High_p015 --attack_id High --
 
 # Detailed Experimental Running
 
-In our papr, we conduct experiments on below hardware: 
+In our paper, we conduct experiments on below hardware:
 
 > GPU Model: NVIDIA A6000
 >
