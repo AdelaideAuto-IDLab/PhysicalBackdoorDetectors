@@ -41,6 +41,12 @@ pip install -r requirements.txt
 pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
 ```
 
+### GPU Requirements
+We use NVIDIA A6000 (49GB) for our experiments.
+
+
+
+
 
 
 # Large Files and Datasets
@@ -80,13 +86,25 @@ unzip MTSD_scenes.zip
 
 # Poisoning Stage
 
-1. Poison the clean dataset (This step is not necessary for artifact evaluation. You can skip to Evaluation section)
+Poison the clean dataset (This step is not necessary for artifact evaluation. You can skip to Evaluation section)
 
 - Follow the command to poison clean dataset:
 
 ```python
 python3 poison.py --ratio 0.15 --out_dir YOLO_Blue_High_p015 --attack_id High --data_yaml yolo_blue_high_015.yaml
 ```
+
+# Training Stage 
+
+In this stage, we will train model with our poisoned dataset to employ backdoor effect into the model. To add backdoor with different models, please follow the guide of those models on their repo and use this dataset to train.
+
+***Follow the command to run the training for yolov5***
+
+```python
+python train.py --data yolo_blue_high_015.yaml --cfg yolov5s6.yaml --weights yolov5s6.pt --hyp ./yolov5/data/hyps/hyp.scratch.yaml --epochs 100 --batch-size 8 --project YOLO_Backdoor --name high_setting
+```
+
+**You need to log in to wandb in your console before running the training script**
 
 # Evaluation
 
