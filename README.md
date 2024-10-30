@@ -23,19 +23,18 @@ series = {ACSAC 2024}
 
 | File | Description |
 | --------- | ----------- |
-| [asr_eval.py](asr_eval.py) | Documentation files (config optimizations, cov analysis, crash analysis). |
-| [attack.tsv](attack.tsv) | The emulator which performs runs of a firmware for a given input file. |
-| [dino_config ](dino_config) | MMIO modeling (based on angr). |
+| [asr_eval.py](asr_eval.py) | evaluate attack success rate. |
+| [attack.tsv](attack.tsv) | configuration for attacks (Location, size, color, etc...) |
+| [dino_config ](dino_config) | configuration for DINO models. |
 | [labels.csv ](labels.csv) | Labels to create poisoning dataset. |
 | [model.py](model.py) | configuration of model architecture. |
-| [README.md ](README.md ) | configuration of model architecture. |
-| [model.py](model.py) | configuration of model architecture. |
 | [requirements.txt](requirements.txt) | code to poison dataset. |
-| [poison.py](poison.py) | code to poison dataset. |
+| [poison.py](poison.py) | code to poison dataset. 
 | [script](script) | code to poison dataset. |
-| [signs_object](signs_object) | Transformation function in the pipeline of poisoning |
+| [signs_object](signs_object) | store all traffic signs for MORPHING in MTSD |
+| [script](script) | store all the scripts to generate results. |
+| [transformations](transformations) | code to poison dataset. |
 | [yolv5](yolov5) | configuration and model architecture of YOLOv5. |
-
 
 
 # Requirements
