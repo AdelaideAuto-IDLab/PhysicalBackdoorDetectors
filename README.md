@@ -19,6 +19,25 @@ series = {ACSAC 2024}
 }
 ```
 
+# File Structure
+
+| File | Description |
+| --------- | ----------- |
+| [asr_eval.py](asr_eval.py) | Documentation files (config optimizations, cov analysis, crash analysis). |
+| [attack.tsv](attack.tsv) | The emulator which performs runs of a firmware for a given input file. |
+| [dino_config ](dino_config) | MMIO modeling (based on angr). |
+| [labels.csv ](labels.csv) | Labels to create poisoning dataset. |
+| [model.py](model.py) | configuration of model architecture. |
+| [README.md ](README.md ) | configuration of model architecture. |
+| [model.py](model.py) | configuration of model architecture. |
+| [requirements.txt](requirements.txt) | code to poison dataset. |
+| [poison.py](poison.py) | code to poison dataset. |
+| [script](script) | code to poison dataset. |
+| [signs_object](signs_object) | Transformation function in the pipeline of poisoning |
+| [yolv5](yolov5) | configuration and model architecture of YOLOv5. |
+
+
+
 # Requirements
 
 To install the requirements for this repo, run the following command: 
@@ -162,20 +181,3 @@ In our paper, we conduct experiments on below hardware:
 > GPU Number: 1
 
 
-# File Structure
-
-```
-.
-├── asr_eval.py         # evaluate attack success rate 
-├── attack.tsv          # configuration for attacks
-├── dino_config         # configuration for DINO models
-├── labels.csv          # labels
-├── model.py            # configuration of model architecture
-├── poison.py           # code to poison dataset
-├── README.md           # README file
-├── requirements.txt    # required packages to run this projectj
-├── script/             # store all the scripts to generate results
-├── signs_object/       # store all traffic signs for MORPHING in MTSD
-├── transformations/    # all transformation functions
-└── yolov5/             # configuration and model architecture of YOLOv5
-```
