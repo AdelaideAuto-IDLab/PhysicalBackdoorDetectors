@@ -1,6 +1,6 @@
 # On the Credibility of Backdoor Attacks Against Object Detectors in the Physical World
 
-This is the official source code for "On the Credibility of Backdoor Attacks Against Object Detectors in the Physical World" 
+This is the official source code for "On the Credibility of Backdoor Attacks Against Object Detectors in the Physical World" that got accepted to ACSAC 24' conference
 
 Arxiv Version: [Paper](https://arxiv.org/abs/2408.12122)
 
