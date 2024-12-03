@@ -141,7 +141,7 @@ python train.py --data yolo_blue_high_015.yaml --cfg yolov5s6.yaml --weights yol
 
 # Evaluation
 
-***Follow the command to run the evaluation for each model*** (This will replicate Table 3, which is our main table that include results of all models with different trigger locations)
+Follow the command to run the evaluation for each model
 
 **Traffic Signs**
 - YOLO
