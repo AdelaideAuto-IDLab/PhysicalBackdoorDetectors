@@ -43,12 +43,12 @@ series = {ACSAC 2024}
 | [dino_config ](dino_config) | configuration for DINO models. |
 | [labels.csv ](labels.csv) | Labels to create poisoning dataset. |
 | [model.py](model.py) | configuration of model architecture. |
-| [requirements.txt](requirements.txt) | code to poison dataset. |
+| [requirements.txt](requirements.txt) | required library and packages to run the code. |
 | [poison.py](poison.py) | code to poison dataset. 
-| [script](script) | code to poison dataset. |
+| [script](script) | script to run evaluation. |
 | [signs_object](signs_object) | store all traffic signs for MORPHING in MTSD |
 | [script](script) | store all the scripts to generate results. |
-| [transformations](transformations) | code to poison dataset. |
+| [transformations](transformations) | augmentation for physical world adaptation. |
 | [yolv5](yolov5) | configuration and model architecture of YOLOv5. |
 
 
