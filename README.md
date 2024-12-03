@@ -4,13 +4,10 @@
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
 
   <div style="flex: 1; margin: 10px;">
-    <img src="assets/rgb.gif" alt="Second GIF" style="width: 100%">
+    <img src="assets/rgb.gif" alt="Second GIF" style="width: 80%">
+    <img src="assets/rgb.gif" alt="First GIF" style="width: 80%;">
   </div>
 
-  <div style="flex: 1; margin: 10px;">
-    <img src="assets/rgb.gif" alt="First GIF" style="width: 100%;">
-    <!-- <p style="text-align: center;">Description for the second GIF</p> -->
-  </div>
 
 </div>
 
