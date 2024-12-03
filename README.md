@@ -1,15 +1,16 @@
 # On the Credibility of Backdoor Attacks Against Object Detectors in the Physical World
 
 
-<div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
-
-  <div style="flex: 1; margin: 10px;">
-    <img src="assets/rgb.gif" alt="Second GIF" style="width: 80%">
-    <img src="assets/rgb.gif" alt="First GIF" style="width: 80%;">
-  </div>
-
-
-</div>
+<table>
+  <tr>
+    <td style="padding: 10px;">
+      <img src="assets/rgb.gif" alt="Second GIF" style="width: 350px; height: 250px;">
+    </td>
+    <td style="padding: 10px;">
+      <img src="assets/t2.gif" alt="First GIF" style="width: 350px; height: 250px;">
+    </td>
+  </tr>
+</table>
 
 
 This is the official source code for "On the Credibility of Backdoor Attacks Against Object Detectors in the Physical World" 
