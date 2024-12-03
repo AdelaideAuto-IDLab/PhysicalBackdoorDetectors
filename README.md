@@ -3,11 +3,11 @@
 
 <table>
   <tr>
-    <td style="padding: 10px; text-align: center;">
+    <td style="padding: 10px;" align="center">
       <img src="assets/t2.gif" alt="Second GIF" style="width: 350px; height: 250px;">
       <p style="text-align: center;">Traffic Sign Detection Task</p>
     </td>
-    <td style="padding: 10px; text-align: center;">
+    <td style="padding: 10px;" align="center">
       <img src="assets/rgb.gif" alt="First GIF" style="width: 350px; height: 250px;">
       <p style="text-align: center;">Vehicle Detection Task</p>
     </td>
