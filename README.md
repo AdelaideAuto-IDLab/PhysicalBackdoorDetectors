@@ -84,6 +84,9 @@ We use NVIDIA A6000 (49GB) for our experiments.
 
 # Large Files and Datasets
 
+Note: to download the dataset and pre-trained weights, you need to submit the form to gain access, link to the form is available in our website:
+[form](https://sites.google.com/view/drive-by-fly-by/download)
+
 We are realeasing the physical video set so you will need to download the dataset as well as pretrained weights in order to run our pipeline
 
 
